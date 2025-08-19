@@ -28,10 +28,10 @@ This is a Svelte application built for the Fametonic test assignment.
 
 ## Live Demo
 
-[Live Demo Link](YOUR_LIVE_DEMO_URL)
+[Live Demo Link](https://fametonic-test.vercel.app/)
 
 ## Repository
 
-[Public Repository Link](YOUR_PUBLIC_REPO_URL)
+[Public Repository Link](https://github.com/zahidhasann88/fametonic-test)
 
 ---
