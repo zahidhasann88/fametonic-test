@@ -31,16 +31,16 @@
   });
 </script>
 
-<header class="w-full relative z-30">
+<header class="relative z-30 w-full">
   <!-- Top promo bar -->
   <div
     class="text-white py-2.5 px-4 sm:px-6 lg:px-8 xl:px-[250px] h-auto flex items-center justify-center [background:linear-gradient(to_right,_#FC004E,_#10CBE0)]"
   >
-    <p class="text-center py-2 sm:py-0">
+    <p class="py-2 text-center sm:py-0">
       <span class="inline-flex items-center vertical-align-middle">
         <span class="mr-1 sm:mr-2">🚀</span>
         <span
-          class="font-[800] text-[14px] xs:text-[16px] sm:text-[22px] leading-[100%] bg-[#00E7F9] bg-clip-text text-transparent"
+          class="font-[700] text-[14px] xs:text-[16px] sm:text-[22px] leading-[100%] bg-[#00E7F9] bg-clip-text text-transparent"
         >
           FRESH BEGINNINGS SALE:
         </span>
@@ -58,7 +58,7 @@
     class="bg-black text-white p-4 sm:px-6 lg:px-8 xl:px-[250px] flex justify-between items-center"
   >
     <!-- empty spacer for alignment -->
-    <div class="md:hidden w-8"></div>
+    <div class="w-8 md:hidden"></div>
 
     <!-- Logo -->
     <div class="flex justify-center md:justify-start md:flex-grow">
@@ -73,14 +73,14 @@
 
     <!-- Mobile menu button -->
     <button
-      class="md:hidden text-white"
+      class="text-white md:hidden"
       on:click={toggleMenu}
       title="Menu"
       aria-label="Menu"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        class="h-6 w-6"
+        class="w-6 h-6"
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
@@ -124,19 +124,19 @@
   <!-- Mobile menu -->
   {#if isMenuOpen}
     <div
-      class="md:hidden bg-black text-gray-400 py-4 px-6 absolute w-full z-40"
+      class="absolute z-40 w-full px-6 py-4 text-gray-400 bg-black md:hidden"
     >
       <nav class="flex flex-col space-y-4">
         <a
           href="/about-us"
-          class="text-gray-400 hover:text-pink-300 transition-colors"
+          class="text-gray-400 transition-colors hover:text-pink-300"
           on:click={() => (isMenuOpen = false)}
         >
           About us
         </a>
         <a
           href="/contact"
-          class="text-gray-400 hover:text-pink-300 transition-colors"
+          class="text-gray-400 transition-colors hover:text-pink-300"
           on:click={() => (isMenuOpen = false)}
         >
           Contact
@@ -144,7 +144,7 @@
         {#if showSignInLink}
           <a
             href="/sign-in"
-            class="text-gray-400 hover:text-pink-300 transition-colors"
+            class="text-gray-400 transition-colors hover:text-pink-300"
             on:click={() => (isMenuOpen = false)}
           >
             Sign In
