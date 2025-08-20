@@ -96,7 +96,7 @@
             Privacy Policy, Subscription Terms
           </p>
           <div
-            class="text-[10px] leading-[100%] font-[500] align-middle text-[#ABABAB] mt-[40px] mb-[40px] text-center"
+            class="text-[10px] leading-[100%] font-[500] align-middle text-[#ABABAB] mt-[30px] mb-[30px] text-center"
           >
             Fametonic 2025 ©All Rights Reserved.
           </div>
