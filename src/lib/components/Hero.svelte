@@ -161,21 +161,21 @@
     </div>
 
     <!-- Hero Image -->
-<div
-  class="relative flex items-start justify-center order-first w-full pb-8 overflow-visible md:w-1/2 md:justify-end md:order-last md:pb-12 lg:pb-16"
->
-  <div
-    class={`relative ${isMobile ? "" : "md:relative md:right-0 md:top-0"}`}
-  >
-    <img
-      src="/Influe_mobile_mockup.png"
-      alt="Fametonic mobile app"
-      class="relative w-[290px] sm:w-[410px] md:w-[500px] lg:w-[580px] xl:w-[620px] ml-[1px] scale-110 md:scale-125 md:translate-x-2 lg:translate-x-4 translate-y-2 md:translate-y-4"
-    />
     <div
-      class="absolute top-0 left-1/2 transform -translate-x-1/2 w-[128%] h-[80%] rounded-full bg-gradient-to-r from-[#FC004E] to-[#10CBE0] opacity-50 blur-2xl -z-10"
-    ></div>
-  </div>
-</div>
+      class="relative flex items-start justify-center order-first w-full pb-8 overflow-visible md:w-1/2 md:justify-end md:order-last md:pb-12 lg:pb-16"
+    >
+      <div
+        class={`relative ${isMobile ? "" : "md:relative md:right-0 md:top-0"}`}
+      >
+        <img
+          src="/Influe_mobile_mockup.png"
+          alt="Fametonic mobile app"
+          class="relative w-[280px] sm:w-[320px] md:w-[400px] lg:w-[480px] xl:w-[520px] h-auto ml-[1px] scale-110 md:scale-125 md:translate-x-2 lg:translate-x-4 translate-y-2 md:translate-y-4"
+        />
+        <div
+          class="absolute top-0 left-1/2 transform -translate-x-1/2 w-[128%] h-[80%] rounded-full bg-gradient-to-r from-[#FC004E] to-[#10CBE0] opacity-50 blur-2xl -z-10"
+        ></div>
+      </div>
+    </div>
   </div>
 </div>
