@@ -14,11 +14,13 @@ This is a Svelte application built for the Fametonic test assignment.
 ## Getting Started
 
 1. **Install dependencies:**
+
    ```bash
    npm install
    ```
 
 2. **Run the development server:**
+
    ```bash
    npm run dev
    ```
@@ -30,8 +32,16 @@ This is a Svelte application built for the Fametonic test assignment.
 
 [Live Demo Link](https://fametonic-test.vercel.app/)
 
-## Repository
+## Screenshots
 
-[Public Repository Link](https://github.com/zahidhasann88/fametonic-test)
+Here are two screenshots of the application:
+
+<p align="center">
+   <img src="public/phone.png" alt="Mobile View" width="300" style="margin: 10px;" />
+   <br><sub>Mobile View</sub>
+   <br><br>
+   <img src="public/desktop.png" alt="Desktop View" width="200" style="margin: 10px;" />
+   <br><sub>Desktop View</sub>
+</p>
 
 ---

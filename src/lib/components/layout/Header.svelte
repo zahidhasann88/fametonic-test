@@ -34,9 +34,10 @@
 <header class="relative z-30 w-full">
   <!-- Top promo bar -->
   <div
-    class="text-white py-2.5 px-4 sm:px-6 lg:px-8 xl:px-[250px] h-auto flex items-center justify-center [background:linear-gradient(to_right,_#FC004E,_#10CBE0)]"
+    class="text-white py-2.5 w-full h-auto flex items-center justify-center [background:linear-gradient(to_right,_#FC004E,_#10CBE0)]"
   >
-    <p class="py-2 text-center sm:py-0">
+    <div class="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-[250px]">
+  <p class="py-2 text-center sm:py-0">
       <span class="inline-flex items-center vertical-align-middle">
         <span class="mr-1 sm:mr-2">🚀</span>
         <span
@@ -50,13 +51,15 @@
       >
         Extra 25% OFF, Limited Spots - start your journey today!
       </span>
-    </p>
+      </p>
+    </div>
   </div>
 
   <!-- Main header -->
   <div
-    class="bg-black text-white p-4 sm:px-6 lg:px-8 xl:px-[250px] flex justify-between items-center"
+    class="flex items-center justify-between w-full text-white bg-black"
   >
+    <div class="w-full max-w-[1440px] mx-auto flex justify-between items-center p-4 sm:px-6 lg:px-8 xl:px-[220px]">
     <!-- empty spacer for alignment -->
     <div class="w-8 md:hidden"></div>
 
@@ -119,6 +122,7 @@
         </a>
       {/if}
     </nav>
+    </div>
   </div>
 
   <!-- Mobile menu -->

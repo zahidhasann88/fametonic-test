@@ -41,9 +41,9 @@
 </script>
 
 <div
-  class="bg-black text-white p-6 sm:px-6 md:px-8 lg:px-12 xl:px-[250px] relative overflow-hidden"
+  class="relative overflow-hidden text-white bg-black"
 >
-  <div class="flex flex-col items-start justify-between md:flex-row">
+  <div class="flex flex-col items-start justify-between md:flex-row w-full max-w-[1440px] mx-auto p-6 sm:px-6 md:px-8 lg:px-12 xl:px-[220px]">
     <!-- Hero Content -->
     <div
       class="relative z-20 w-full px-2 mb-8 text-center md:w-1/2 md:mb-0 md:text-left sm:px-0"
