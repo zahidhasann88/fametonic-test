@@ -1,5 +1,3 @@
-
-<!-- Header.svelte -->
 <script lang="ts">
   import { onMount } from "svelte";
   import { showSignIn } from "../../../lib/stores/showSignIn";
@@ -8,8 +6,7 @@
   let windowWidth = 0;
   let showSignInLink = false;
 
-  // Subscribe to the showSignIn store
-  showSignIn.subscribe(value => {
+  showSignIn.subscribe((value) => {
     showSignInLink = value;
   });
 
@@ -36,92 +33,94 @@
   <div
     class="text-white py-2.5 w-full h-auto flex items-center justify-center [background:linear-gradient(to_right,_#FC004E,_#10CBE0)]"
   >
-    <div class="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-[250px]">
-  <p class="py-2 text-center sm:py-0">
-      <span class="inline-flex items-center vertical-align-middle">
-        <span class="mr-1 sm:mr-2">🚀</span>
-        <span
-          class="font-[700] text-[14px] xs:text-[16px] sm:text-[22px] leading-[100%] bg-[#00E7F9] bg-clip-text text-transparent"
-        >
-          FRESH BEGINNINGS SALE:
+    <div
+      class="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-[250px]"
+    >
+      <p class="py-2 text-center sm:py-0">
+        <span class="inline-flex items-center vertical-align-middle">
+          <span class="mr-1 sm:mr-2">🚀</span>
+          <span
+            class="font-[700] text-[14px] xs:text-[16px] sm:text-[22px] leading-[100%] bg-[#00E7F9] bg-clip-text text-transparent"
+          >
+            FRESH BEGINNINGS SALE:
+          </span>
         </span>
-      </span>
-      <span
-        class="font-[600] text-[14px] xs:text-[16px] sm:text-[22px] leading-[100%]"
-      >
-        Extra 25% OFF, Limited Spots - start your journey today!
-      </span>
+        <span
+          class="font-[600] text-[14px] xs:text-[16px] sm:text-[22px] leading-[100%]"
+        >
+          Extra 25% OFF, Limited Spots - start your journey today!
+        </span>
       </p>
     </div>
   </div>
 
   <!-- Main header -->
-  <div
-    class="flex items-center justify-between w-full text-white bg-black"
-  >
-    <div class="w-full max-w-[1440px] mx-auto flex justify-between items-center p-4 sm:px-6 lg:px-8 xl:px-[220px]">
-    <!-- empty spacer for alignment -->
-    <div class="w-8 md:hidden"></div>
-
-    <!-- Logo -->
-    <div class="flex justify-center md:justify-start md:flex-grow">
-      <a href="/" class="no-underline">
-        <img
-          src="/logo.png"
-          alt="Fame Tonic Logo"
-          class="relative z-20 w-[120px] md:w-[150px] h-auto"
-        />
-      </a>
-    </div>
-
-    <!-- Mobile menu button -->
-    <button
-      class="text-white md:hidden"
-      on:click={toggleMenu}
-      title="Menu"
-      aria-label="Menu"
+  <div class="flex items-center justify-between w-full text-white bg-black">
+    <div
+      class="w-full max-w-[1440px] mx-auto flex justify-between items-center p-4 sm:px-6 lg:px-8 xl:px-[220px]"
     >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="w-6 h-6"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width={2}
-          d="M4 6h16M4 12h16M4 18h16"
-        />
-      </svg>
-    </button>
+      <!-- empty spacer for alignment -->
+      <div class="w-8 md:hidden"></div>
 
-    <!-- Desktop nav -->
-    <nav
-      class="hidden md:flex space-x-8 font-semibold text-[18px] text-center align-middle"
-    >
-      <a
-        href="/about-us"
-        class="text-[#A9A9A9] hover:text-pink-300 transition-colors"
+      <!-- Logo -->
+      <div class="flex justify-center md:justify-start md:flex-grow">
+        <a href="/" class="no-underline">
+          <img
+            src="/logo.png"
+            alt="Fame Tonic Logo"
+            class="relative z-20 w-[120px] md:w-[150px] h-auto"
+          />
+        </a>
+      </div>
+
+      <!-- Mobile menu button -->
+      <button
+        class="text-white md:hidden"
+        on:click={toggleMenu}
+        title="Menu"
+        aria-label="Menu"
       >
-        About us
-      </a>
-      <a
-        href="/contact"
-        class="text-[#A9A9A9] hover:text-pink-300 transition-colors"
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-6 h-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width={2}
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+      </button>
+
+      <!-- Desktop nav -->
+      <nav
+        class="hidden md:flex space-x-8 font-semibold text-[18px] text-center align-middle"
       >
-        Contact
-      </a>
-      {#if showSignInLink}
         <a
-          href="/sign-in"
+          href="/about-us"
           class="text-[#A9A9A9] hover:text-pink-300 transition-colors"
         >
-          Sign In
+          About us
         </a>
-      {/if}
-    </nav>
+        <a
+          href="/contact"
+          class="text-[#A9A9A9] hover:text-pink-300 transition-colors"
+        >
+          Contact
+        </a>
+        {#if showSignInLink}
+          <a
+            href="/sign-in"
+            class="text-[#A9A9A9] hover:text-pink-300 transition-colors"
+          >
+            Sign In
+          </a>
+        {/if}
+      </nav>
     </div>
   </div>
 
